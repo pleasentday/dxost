@@ -1,0 +1,157 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+    scroll-behavior: smooth;
+}
+
+.side-bar{
+    position: fixed;
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+    z-index: 1000;
+    width: 100%;
+    height: 10vh;
+    background-color: #313131;
+    transition: 0.3s;
+}
+.side-bar a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+.side-bar span{
+    padding: 30px;
+    transition: 0.5s;
+}
+.side-bar span:hover,
+.side-bar span:active{
+    color: #313131;
+    background-color: #fff;
+}
+.fon{
+	color: #000;
+	background-image: url(https://wallpaperaccess.com/full/24866.jpg);
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vh-1{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.intro span{
+	display: inline-block;
+    padding-top: 150px; 
+    font-size: 4em;
+    font-family: "Changa One", sans-serif;
+}
+.line-1{
+    transform: translateX(-45px) translateY(48px) rotate(-33deg);
+}
+.line-2{
+    transform: translateX(-30px) translateY(13px) rotate(-19deg);
+}
+
+.line-4{
+    transform: translateX(30px) translateY(13px) rotate(19deg);
+}
+.line-5{
+    transform: translateX(45px) translateY(48px) rotate(33deg);
+}
+
+.txt{
+    color: #000;
+    padding-top: 100px; 
+	width: 70%;
+}
+
+.vh{
+    margin-top: 20px;
+    width: 90%;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+.vh-2{
+    background-image: url(https://wallpaperaccess.com/full/2159510.jpg);
+}
+.vh-3{
+    background-image: url(https://images3.alphacoders.com/857/857335.jpg);
+}
+.vh-4{
+    background-image: url(https://i.pinimg.com/originals/ca/b6/13/cab613ca0fc4491ed7b65e4b7a6c85c7.jpg);
+}
+.vh-5{
+    background-image: url(https://images.wallpapersden.com/image/download/4k-goku-ultra-2020_bGloaG2UmZqaraWkpJRobWllrWdma2U.jpg);
+}
+.vh-6{
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/764/505/66/baby-groot-4k-hd-superheroes-wallpaper-preview.jpg);
+}
+.vh-7{
+    background-image: url(https://wallpaperarc.com/wp-content/uploads/2020/06/Cyberpunk-Synthwave-4K-Ultra-HD-Wallpaper-3840x2160-16.jpg);
+}
+.vh-8{
+    background-image: url(http://getwallpapers.com/wallpaper/full/c/4/7/1305757-ultra-hd-4k-wallpapers-1080p-3840x2160-samsung.jpg);
+}
+.vh-9{
+    background-image: url(https://images.wallpapersden.com/image/download/kame-house-dragon-ball-z_a2llbmaUmZqaraWkpJRoZWhnrWZsZWs.jpg);
+}
+.vh-10{
+    margin-top: 20px;
+    width: 100%;
+    height: 120vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    background-image: url(https://m.media-amazon.com/images/M/MV5BMmYwNjlhOGQtNWQ1YS00YTU0LWJkZmYtMTdlZjVmNWY4MGJjXkEyXkFqcGdeQXVyOTk5OTU0MTc@._V1_.jpg);
+    filter: invert(100%);
+}
+
+.niz{
+    width: 100%;
+    height: 20vh;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.niz a{
+    height: 40px;
+    width: 40px;
+}
+.links img{
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+    filter: invert(30%);
+    transition: 0.3s;
+}
+.links img:hover{
+    transform: translateY(-5px);
+    filter: invert(100%);
+}
