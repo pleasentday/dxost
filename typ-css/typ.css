@@ -1,0 +1,95 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #343f4f;
+}
+.des{
+	display: inline-flex;
+	align-items: center;
+}
+
+.des .txt{
+	color: #fff;
+	font-size: 60px;
+	font-weight: 400;
+}
+
+.des .animate_text{
+	margin-left: 15px;
+	height: 90px;
+	line-height: 90px;
+	overflow: hidden;
+}
+.animate_text li{
+	color: #fc6060;
+	list-style: none;
+	font-size: 60px;
+	font-weight: 500;
+	position: relative;
+	top: 0;
+	animation: slide 12s steps(4) infinite;
+}
+@keyframes slide{
+	100%{
+		top: -360px;
+	}
+}
+.animate_text li span{
+	position: relative;
+}
+.animate_text li span::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: #343f4f;
+	border-left: 2px solid #fc6060;
+	animation: typ 3s steps(9) infinite;
+}
+@keyframes typ{
+	50%{
+		left: 100%;
+		margin: 0 -35px 0 35px;
+	}
+	75%{
+		left: 100%;
+	}
+}
+
+.back{
+	top: 30px;
+	left: 30px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	position: absolute;
+	display: flex;
+	background: #fff;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.back span{
+	width: 50px;
+	height: 5px;
+	background: #000;
+}
+.back #q{
+	transform: rotateZ(-40deg) translateX(-10px) translateY(5px);
+	width: 25px;
+}
+.back #e{
+	transform: rotateZ(40deg) translateX(-10px) translateY(-5px);
+	width: 25px;
+}
